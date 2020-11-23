@@ -48,11 +48,20 @@ export default [{
     path: "/canteen",
     name: "canteen",
     meta: {
-      title: '我的食堂',
+      title: '我的饭圈',
       keepAlive: true,
       back: true
     },
     component: (resolve) => require(["@/views/canteen/index"], resolve),
+  }, {
+    path: "/addFood",
+    name: "addFood",
+    meta: {
+      title: '饭圈设置',
+      keepAlive: true,
+      back: true
+    },
+    component: (resolve) => require(["@/views/canteen/addFood"], resolve),
   }, {
     path: "/round",
     name: "round",

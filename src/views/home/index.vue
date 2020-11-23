@@ -111,7 +111,7 @@ export default {
       width: 180px;
       height: 60px;
       font-size: 32px;
-      background: linear-gradient(to bottom, #ffba30, #ff911e);
+      background: linear-gradient(to bottom, tomato, red);
       color: #fff;
     }
   }

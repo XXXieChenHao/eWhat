@@ -8,11 +8,11 @@
       @click-left="goBack"
     />
 
-    <router-view></router-view>
+    <router-view class="content"></router-view>
 
     <div class="footer flex-row">
       <router-link to="/home">
-        <van-icon size="30" :color="$route.from == 'home'? 'tomato': '#333'" name="wap-home-o" />
+        <van-icon size="30" :color="$route.name == 'home'? 'tomato': '#333'" name="wap-home-o" />
       </router-link>
       <router-link to="/menu">
         <van-icon size="30" :color="$route.name == 'menu'? 'tomato': '#333'" name="apps-o" />
@@ -37,11 +37,12 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.border {
-  padding: 45px 0;
-}
 .content {
-  background: red;
+  padding: 45px 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: auto;
+  background: #f4f4f4;
 }
 
 .footer {

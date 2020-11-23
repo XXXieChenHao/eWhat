@@ -12,7 +12,6 @@ import Layout from './components/layout/index'
       Layout
     },
     mounted() {
-      console.log(this.$route.meta)
     }
   }
 </script>

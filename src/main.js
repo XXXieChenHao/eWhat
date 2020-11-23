@@ -8,6 +8,18 @@ import 'lib-flexible'
 
 import Vant from 'vant';
 import 'vant/lib/index.css';
+
+// 引入百度地图插件
+// import * as vueJsonp from 'vue-jsonp'
+// import BaiduMap from 'vue-baidu-map'
+// Vue.use(vueJsonp)
+// Vue.use(BaiduMap, {
+//   ak: 'CmGC3YLDdZFZKLVjEu9Z9pWRVsupZVME'
+// })
+
+// 引入公共方法
+import Common from '@/utils/common'
+Vue.prototype.com = new Common()
 Vue.use(Vant);
 
 Vue.config.productionTip = false
